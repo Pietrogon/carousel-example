@@ -1,0 +1,70 @@
+/* Reset css props and set font pattern */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.carousel {
+  width: 100%; /* Width of carousel */
+  height: 166px; /* Height of carousel */
+  display: flex; /* Set inline elements */
+  align-items: center; /* Centering elements */
+}
+
+.button {
+  position: relative; /* Set button in right position */
+  width: 40px; /* Width of button */
+  height: 40px; /* Height of button */
+  /* Style button */
+  background: #127357;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+#button-back {
+  right: calc(100% - 8px); /* For set button in left position */
+  border-radius: 0 50% 50% 0; /* Set border radius */
+}
+
+#button-next {
+  right: 55px; /* For set button in right position */
+  border-radius: 50% 0 0 50%; /* Set border radius */
+}
+
+.card-container {
+  width: 100%; /* Width of card container */
+  display: flex; /* Set inline elements */
+  margin: 8px; /* Set margin */
+  overflow-x: auto; /* Set overflow in horizontal scroll */
+  overflow-y: hidden; /* Hidden overflow in vertical scroll */
+  scroll-snap-type: x mandatory; /* Force the scroll to snap to the start of a scroll-snap area */
+  gap: 8px; /* Set gap between cards */
+  flex: 0 0 calc(100% - 16px); /* Set width of card container */
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari and Opera */
+}
+
+.card {
+  min-width: 250px; /* Set min width of card */
+  height: 150px; /* Set height of card */
+  scroll-snap-align: start; /* Set scroll snap */
+  /* Style card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#17BF60;
+  border: 1px solid #4F5873;
+  color: #4a544c;
+  border-radius: 8px;
+}
+
+.card:hover {
+  background: #1ED96F; /* Set background color when hover */
+}
